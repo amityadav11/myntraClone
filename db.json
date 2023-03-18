@@ -1,0 +1,22 @@
+{
+  "products": [
+    {
+      "image": "https://i.natgeofe.com/n/04893221-0da3-4297-9a88-d391a550dff6/NationalGeographic_1190359.jpg?w=2880&h=1916",
+      "title": "Neanderthal",
+      "price": "1222",
+      "brand": "",
+      "discount": "20",
+      "gender": "male",
+      "id": 1
+    },
+    {
+      "image": "https://images.theconversation.com/files/513757/original/file-20230306-22-ijo2xo.jpg?ixlib=rb-1.1.0&q=30&auto=format&w=600&h=400&fit=crop&dpr=2",
+      "title": "mgri",
+      "price": "500",
+      "brand": "",
+      "discount": "2",
+      "gender": "female",
+      "id": 2
+    }
+  ]
+}
