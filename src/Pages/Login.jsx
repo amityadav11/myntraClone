@@ -1,14 +1,17 @@
-import React, { useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
 import styled from "styled-components";
+import React from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { login } from "../Redux/authReducer/action";
-export const Login = () => {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+import { useLocation, useNavigate } from "react-router-dom";
 
-  const {auth} = useSelector((store) => store.authReducer);
-  //console.log(state);
+function Login() {
+  const [email, setEmail] = React.useState("");
+  const [password, setPassword] = React.useState("");
+  const location = useLocation();
+  const navigate = useNavigate();
   const dispatch = useDispatch();
+  const { auth } = useSelector((store) => store.authReducer);
+  console.log(location);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -16,52 +19,65 @@ export const Login = () => {
       email,
       password,
     };
-
-    dispatch(login(userData));
+    dispatch(login(userData)).then(() => {
+      navigate(location.state, { replace: true });
+    });
     setEmail("");
     setPassword("");
   };
+
   return (
-    <DIV>
-      <h1>User Login Page</h1>
-      <h3>{auth? "Login Successfull" : "Login to continue"}</h3>
-      <form className="form-1" onSubmit={handleSubmit}>
+    <DIV auth={auth}>
+      <h2>USER LOGIN</h2>
+      <h3>{auth ? "Login Successful" : "Login to Continue"}</h3>
+      <FORM className="form-1" onSubmit={handleSubmit}>
         <input
           type="email"
-          placeholder="Email"
           value={email}
+          placeholder="Email"
           onChange={(e) => setEmail(e.target.value)}
         />
         <input
           type="password"
-          placeholder="Password"
           value={password}
+          placeholder="Password"
           onChange={(e) => setPassword(e.target.value)}
         />
-        <button type="submit">Log in</button>
-      </form>
+        <button type="submit">Login</button>
+      </FORM>
     </DIV>
   );
-};
+}
+
+export { Login };
 
 const DIV = styled.div`
   width: 400px;
-  margin: 40px;
-  border: 1px solid gray;
+  margin: 40px auto;
   padding: 20px;
-
-  .form-1 {
+  border: 1px solid gray;
+  form {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    align-items: center;
   }
-
+  h3 {
+    color: ${({ auth }) => (auth ? "green" : "red")};
+  }
   input {
     width: 80%;
     height: 40px;
     font-size: large;
   }
+  button {
+    width: 20%;
+    height: 35px;
+  }
 `;
 
-export default Login;
+const FORM = styled.form`
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+`;

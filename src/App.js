@@ -1,16 +1,12 @@
-import MainRoute from './Components/MainRoute';
 import './App.css';
-import Login from './Pages/Login'
-import HomePage from './Pages/HomePage';
-import { NavBar } from './Components/NavBar';
+import { Navbar } from './Components/Navbar';
+import { MainRoutes } from './Pages/MainRoutes';
+
 function App() {
   return (
     <div className="App">
-      <MainRoute/>
-      {/* <NavBar/>
-     <Login/> */}
-     {/* <HomePage/> */}
-    
+      <Navbar/>
+      <MainRoutes/>
     </div>
   );
 }

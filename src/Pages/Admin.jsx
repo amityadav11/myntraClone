@@ -1,33 +1,34 @@
-import React,{useState} from "react";
+import React from "react";
 import styled from "styled-components";
+import { useDispatch, useSelector } from "react-redux";
 import { addProduct } from "../Redux/productReducer/action";
-import { useDispatch } from 'react-redux'
-
 const initialState = {
   image: "",
   title: "",
   price: "",
   brand: "",
   discount: "",
-  gender: "",
+  category: "",
 };
-
-const Admin = () => {
-  const [products, setProducts] = useState(initialState);
+export const Admin = () => {
+  const [product, setProduct] = React.useState(initialState);
   const dispatch = useDispatch();
+  const state = useSelector((store) => store.productReducer);
+  console.log(state);
+
   const handleChange = (e) => {
     const { name, value } = e.target;
-
-    setProducts((prev) => {
+    //console.log(name,value)
+    setProduct((prev) => {
       return { ...prev, [name]: value };
     });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    dispatch(addProduct(products));
-    console.log(products);
-    setProducts("");
+    //console.log(product);
+    dispatch(addProduct(product));
+    setProduct(initialState);
   };
 
   return (
@@ -35,30 +36,41 @@ const Admin = () => {
       <h2>Add Product</h2>
       <form onSubmit={handleSubmit}>
         <input
-          onChange={(e) => handleChange(e)}
+          type="text"
+          value={product.image}
           name="image"
-          type="url"
           placeholder="Image"
+          onChange={(e) => handleChange(e)}
         />
         <input
-          onChange={(e) => handleChange(e)}
+          type="text"
+          value={product.title}
           name="title"
-          type="text"
           placeholder="Title"
+          onChange={(e) => handleChange(e)}
         />
         <input
-          onChange={(e) => handleChange(e)}
+          type="text"
+          value={product.price}
           name="price"
-          type="text"
           placeholder="Price"
+          onChange={(e) => handleChange(e)}
         />
         <input
+          type="brand"
+          value={product.brand}
+          name="brand"
+          placeholder="Brand"
           onChange={(e) => handleChange(e)}
-          name="discount"
-          type="text"
-          placeholder="Discount"
         />
-        <select onChange={(e) => handleChange(e)} name='gender' id="">
+        <input
+          type="text"
+          value={product.discount}
+          name="discount"
+          placeholder="Discount"
+          onChange={(e) => handleChange(e)}
+        />
+        <select name="gender" onChange={(e) => handleChange(e)}>
           <option value="">Select Gender</option>
           <option value="male">Men</option>
           <option value="female">Women</option>
@@ -72,10 +84,9 @@ const Admin = () => {
 
 const DIV = styled.div`
   width: 400px;
-  margin: 40px;
-  border: 1px solid gray;
+  margin: 40px auto;
   padding: 20px;
-
+  border: 1px solid gray;
   form {
     display: flex;
     flex-direction: column;
@@ -88,15 +99,13 @@ const DIV = styled.div`
     height: 40px;
     font-size: large;
   }
-
-  select {
-    width: 80%;
-    height: 40px;
-    font-size: large;
-  }
   button {
-    width: 100px;
-    height: 40px;
+    width: 20%;
+    height: 35px;
+  }
+  select {
+    width: 50%;
+    height: 30px;
+    font-size: 15px;
   }
 `;
-export default Admin;
