@@ -4,7 +4,7 @@
       "image": "https://i.natgeofe.com/n/04893221-0da3-4297-9a88-d391a550dff6/NationalGeographic_1190359.jpg?w=2880&h=1916",
       "title": "Neanderthal",
       "price": "1222",
-      "brand": "",
+      "brand": "pablo",
       "discount": "20",
       "gender": "male",
       "id": 1
@@ -13,10 +13,170 @@
       "image": "https://images.theconversation.com/files/513757/original/file-20230306-22-ijo2xo.jpg?ixlib=rb-1.1.0&q=30&auto=format&w=600&h=400&fit=crop&dpr=2",
       "title": "mgri",
       "price": "500",
-      "brand": "",
+      "brand": "pablo",
       "discount": "2",
       "gender": "female",
       "id": 2
+    },
+    {
+      "image": "https://assets.nautil.us/sites/3/nautilus/Screenshot_20220411-104734_Chrome.jpg?q=65&auto=format&w=700&ar=16:9&fit=crop",
+      "title": "Tech group",
+      "price": "5000",
+      "brand": "pablo",
+      "discount": "20",
+      "category": "",
+      "gender": "female",
+      "id": 3
+    },
+    {
+      "image": "https://assets.nautil.us/sites/3/nautilus/SNZhZWv1-Zeldovich_HERO.png?q=65&auto=format&w=1600&ar=16:9&fit=crop",
+      "title": "Child with glass",
+      "price": "3000",
+      "brand": "Wren & martin",
+      "discount": "10",
+      "category": "",
+      "gender": "kids",
+      "id": 4
+    },
+    {
+      "image": "https://i.guim.co.uk/img/media/e0fa824503590df3f71fb07f92d052fe2935e12d/1410_1294_5310_3186/master/5310.jpg?width=620&quality=45&dpr=2&s=none",
+      "title": "silence",
+      "price": "2000",
+      "brand": "Wren & martin",
+      "discount": "10",
+      "category": "",
+      "gender": "female",
+      "id": 5
+    },
+    {
+      "image": "https://media.glamour.com/photos/640e58a76d71485fb7187d7b/16:9/w_320%/GettyImages-1248097490.jpg",
+      "title": "Florence Pugh",
+      "price": "1000",
+      "brand": "osaka",
+      "discount": "2",
+      "category": "",
+      "gender": "female",
+      "id": 6
+    },
+    {
+      "image": "https://media.glamour.com/photos/640e544126f19e3d026825d2/master/w_1920%2Cc_limit/GettyImages-1473062624.jpg",
+      "title": "Florence Pugh",
+      "price": "3000",
+      "brand": "osaka",
+      "discount": "5",
+      "category": "",
+      "gender": "female",
+      "id": 7
+    },
+    {
+      "image": "https://media.glamour.com/photos/640e4152190b57ca67221d67/master/w_1920%2Cc_limit/GettyImages-1248092162.jpg",
+      "title": "Brendan Fraser",
+      "price": "200",
+      "brand": "sandy",
+      "discount": "1",
+      "category": "",
+      "gender": "male",
+      "id": 8
+    },
+    {
+      "image": "https://media.glamour.com/photos/640e4cfe172c1176dfed2cf6/master/w_1920%2Cc_limit/GettyImages-1248094934.jpg",
+      "title": "Malala Yousafzai",
+      "price": "500",
+      "brand": "malala",
+      "discount": "2",
+      "category": "",
+      "gender": "female",
+      "id": 9
+    },
+    {
+      "image": "https://media.glamour.com/photos/640e544c6f264cfea79ad04b/master/w_1920%2Cc_limit/GettyImages-1473062753.jpg",
+      "title": "Cara Delevingne",
+      "price": "100",
+      "brand": "Cara",
+      "discount": "5",
+      "category": "",
+      "gender": "female",
+      "id": 10
+    },
+    {
+      "image": "https://media.glamour.com/photos/640e4478190b57ca67221d69/master/w_1920%2Cc_limit/Screen%2520Shot%25202023-03-12%2520at%25202.29.32%2520PM.png",
+      "title": "Monica Barbaro",
+      "price": "200",
+      "brand": "Barbaro",
+      "discount": "5",
+      "category": "",
+      "gender": "female",
+      "id": 11
+    },
+    {
+      "image": "https://media.glamour.com/photos/640e6114983e1a75772c8089/master/w_1920%2Cc_limit/GettyImages-1473068626.jpg",
+      "title": "Idris Elba",
+      "price": "500",
+      "brand": "Idris",
+      "discount": "12",
+      "category": "",
+      "gender": "male",
+      "id": 12
+    },
+    {
+      "image": "https://media.glamour.com/photos/640e4f70abb109de9cb7148f/master/w_1920%2Cc_limit/GettyImages-1473059593.jpg",
+      "title": "Sarah Polley",
+      "price": "5000",
+      "brand": "Polley",
+      "discount": "2",
+      "category": "",
+      "gender": "female",
+      "id": 13
+    },
+    {
+      "image": "https://media.glamour.com/photos/640e5448190b57ca67221d6c/master/w_1920%2Cc_limit/GettyImages-1473062737.jpg",
+      "title": "Lenny Kravitz",
+      "price": "2000",
+      "brand": "Lenny",
+      "discount": "3",
+      "category": "",
+      "gender": "male",
+      "id": 14
+    },
+    {
+      "image": "https://media.glamour.com/photos/640e60fa603610a9429f8944/master/w_1920%2Cc_limit/GettyImages-1473068606.jpg",
+      "title": "The Rock",
+      "price": "5000",
+      "brand": "Johnson",
+      "discount": "10",
+      "category": "",
+      "gender": "male",
+      "id": 15
+    },
+    {
+      "image": "https://media.glamour.com/photos/640e5ecadafd31ef9b16979d/master/w_320%/GettyImages-1248099224.jpg",
+      "title": "Florence Pugh",
+      "price": "6000",
+      "brand": "Pugh",
+      "discount": "20",
+      "category": "",
+      "gender": "female",
+      "id": 16
+    },
+    {
+      "image": "https://media.glamour.com/photos/63f66ea69036325b7481afd3/master/w_1920%2Cc_limit/311903000_3293972447491195_2627771484805896142_n.jpeg",
+      "title": "Cool Chardonnay",
+      "price": "1000",
+      "brand": "Chardonnay",
+      "discount": "3",
+      "category": "",
+      "gender": "female",
+      "id": 17
+    },
+    {
+      "image": "https://media.glamour.com/photos/5e7a4cb39123f80008134ef1/master/w_1920%2Cc_limit/Screen%2520Shot%25202020-03-24%2520at%25202.08.30%2520PM.png",
+      "title": "Chunky Highlights",
+      "price": "20000",
+      "brand": "Chunky",
+      "discount": "10",
+      "category": "",
+      "gender": "female",
+      "id": 18
     }
   ]
 }
