@@ -8,7 +8,7 @@ const initialState = {
   price: "",
   brand: "",
   discount: "",
-  category: "",
+  gender: "",
 };
 export const Admin = () => {
   const [product, setProduct] = React.useState(initialState);
