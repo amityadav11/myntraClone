@@ -19,10 +19,11 @@ export const ProductCard=({id,image,title,price,brand,discount,gender})=>{
 const DIV=styled.div`
     border: 1px solid gray;
     padding: 10px;
-    width: 300px;
+    line-height: 8px;
+    
     
     img{
         width: 100%;
-        height:260px
+        height:200px
     }
 `;

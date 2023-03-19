@@ -10,7 +10,7 @@ export const MainRoutes=()=>{
         <Route path="/" element={<HomePage/>}/>
         <Route path="/login" element={<Login/>}/>
         <Route path="/auth" element={<PrivateRoute><Admin/></PrivateRoute> }/>
-        <Route path="/edit/:id" element={<PrivateRoute><EditProduct/></PrivateRoute>}/>
+        <Route path="/edit/:id" element={<EditProduct/>}/>
         <Route path="*" element={<h1>404 Page Not Found !!</h1>}/>
     </Routes>
 
